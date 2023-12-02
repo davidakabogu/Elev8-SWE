@@ -3,7 +3,6 @@ body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  text-align: center;
 }
 
 .flex-container {
@@ -31,7 +30,7 @@ body {
   background-image: url("./Snapshot/1.jpg");
   background-position: bottom;
   background-size: cover;
-  background-color: steelblue;
+  background-color: rgb(56, 115, 163);
   background-blend-mode: multiply;
   height: 350px;
   color: #ffffff;
@@ -53,7 +52,7 @@ body {
 }
 
 .main-btn {
-  margin-right: 512px;
+  margin-right: 478px;
   background-color: rgb(100, 174, 220);
   color: #ffffff;
   padding: 8px;
@@ -65,10 +64,18 @@ body {
   background-color: rgb(34, 114, 205);
 }
 
+.intro {
+  margin-left: 460px;
+  text-size-adjust: 40px;
+}
+.hover-container {
+  text-align: center;
+}
+
 .interest-btn {
   color: rgb(42, 119, 168);
   padding: 8px;
-  padding-inline: 16px;
+  padding-inline: 24px;
   border-color: lightskyblue;
   border-radius: 40px;
   margin-left: 8px;
