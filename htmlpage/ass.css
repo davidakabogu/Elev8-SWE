@@ -1,0 +1,68 @@
+body {
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between; /* Adjust as needed (e.g., center, space-around) */
+  align-items: center; /* Adjust as needed (e.g., flex-start, flex-end) */
+}
+
+.bg-container {
+  background-image: url("./Snapshot/1.jpg");
+  background-size: cover; /* Adjust as needed (e.g., contain, auto) */
+  background-position: bottom; /* Adjust as needed (e.g., top left, bottom right) */
+  height: 300px; /* Adjust the height as needed */
+  color: #ffffff; /* Text color on top of the background image */
+  padding: 20px;
+}
+
+.main-btn {
+  margin-right: 512px;
+  background-color: lightskyblue;
+  color: #ffffff;
+  padding: 8px;
+  border: 1px;
+  border-radius: 40px;
+}
+
+.main-btn:hover {
+  background-color: rgb(34, 114, 205);
+}
+
+.top-btn {
+  background-color: hotpink;
+  color: #ffffff;
+  padding: 8px;
+  border: 1px;
+  border-radius: 40px;
+}
+
+.top-btn:hover {
+  background-color: rgb(209, 43, 126);
+}
+
+.interest-btn {
+  padding: 8px;
+  padding-inline: 16px;
+  border-color: lightskyblue;
+  border-radius: 40px;
+  margin-left: 8px;
+  margin-bottom: 32px;
+}
+
+.interest-btn:hover {
+  background-color: lightskyblue;
+}
+
+.image-container {
+  display: flex;
+  padding-left: 396px;
+}
+
+.image-container img {
+  padding-bottom: 8px;
+  padding-left: 4px;
+  object-fit: cover;
+  margin-right: 5px;
+}
