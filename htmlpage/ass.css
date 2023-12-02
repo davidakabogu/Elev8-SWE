@@ -6,15 +6,43 @@ body {
   display: flex;
   justify-content: space-between; /* Adjust as needed (e.g., center, space-around) */
   align-items: center; /* Adjust as needed (e.g., flex-start, flex-end) */
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.top-btn {
+  background-color: hotpink;
+  color: #ffffff;
+  padding: 8px;
+  border: 1px;
+  border-radius: 40px;
+}
+
+.top-btn:hover {
+  background-color: rgb(209, 43, 126);
 }
 
 .bg-container {
+  position: relative;
   background-image: url("./Snapshot/1.jpg");
-  background-size: cover; /* Adjust as needed (e.g., contain, auto) */
-  background-position: bottom; /* Adjust as needed (e.g., top left, bottom right) */
-  height: 300px; /* Adjust the height as needed */
-  color: #ffffff; /* Text color on top of the background image */
-  padding: 20px;
+  background-size: cover;
+  height: 350px;
+  color: #ffffff;
+}
+
+/* .bg-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, );
+  z-index: -1;
+} */
+
+.intro {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .main-btn {
@@ -30,19 +58,8 @@ body {
   background-color: rgb(34, 114, 205);
 }
 
-.top-btn {
-  background-color: hotpink;
-  color: #ffffff;
-  padding: 8px;
-  border: 1px;
-  border-radius: 40px;
-}
-
-.top-btn:hover {
-  background-color: rgb(209, 43, 126);
-}
-
 .interest-btn {
+  color: rgb(42, 119, 168);
   padding: 8px;
   padding-inline: 16px;
   border-color: lightskyblue;
@@ -57,7 +74,7 @@ body {
 
 .image-container {
   display: flex;
-  padding-left: 396px;
+  justify-content: center;
 }
 
 .image-container img {
