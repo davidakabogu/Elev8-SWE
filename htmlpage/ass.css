@@ -11,7 +11,7 @@ body {
 }
 
 .top-btn {
-  background-color: hotpink;
+  background-color: rgb(209, 43, 126);
   color: #ffffff;
   padding: 8px;
   border: 1px;
@@ -19,13 +19,16 @@ body {
 }
 
 .top-btn:hover {
-  background-color: rgb(209, 43, 126);
+  background-color: hotpink;
 }
 
 .bg-container {
   position: relative;
   background-image: url("./Snapshot/1.jpg");
+  background-position: bottom;
   background-size: cover;
+  background-color: steelblue;
+  background-blend-mode: multiply;
   height: 350px;
   color: #ffffff;
 }
@@ -41,13 +44,13 @@ body {
   z-index: -1;
 } */
 
-.intro {
+/* .intro {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-}
+} */
 
 .main-btn {
   margin-right: 512px;
-  background-color: lightskyblue;
+  background-color: rgb(100, 174, 220);
   color: #ffffff;
   padding: 8px;
   border: 1px;
