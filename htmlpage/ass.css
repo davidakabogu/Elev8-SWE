@@ -38,6 +38,7 @@ body {
 
 .intro {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  margin-left: 460px;
 }
 
 .main-btn {
@@ -53,10 +54,6 @@ body {
   background-color: rgb(34, 114, 205);
 }
 
-.intro {
-  margin-left: 460px;
-  text-size-adjust: 40px;
-}
 .hover-container {
   text-align: center;
 }
