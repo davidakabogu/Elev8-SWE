@@ -32,19 +32,25 @@ body {
   background-size: cover;
   background-color: rgb(56, 115, 163);
   background-blend-mode: multiply;
-  height: 350px;
+  height: 340px;
   color: #ffffff;
+}
+
+.intro-container {
+  display: flex;
+  justify-content: center;
 }
 
 .intro {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-  margin-left: 460px;
+  font-size: smaller;
 }
 
 .main-btn {
   margin-right: 478px;
   background-color: rgb(100, 174, 220);
   color: #ffffff;
+  font-size: x-small;
   padding: 8px;
   border: 1px;
   border-radius: 40px;
@@ -60,8 +66,8 @@ body {
 
 .interest-btn {
   color: rgb(42, 119, 168);
-  padding: 8px;
-  padding-inline: 24px;
+  padding: 6px;
+  padding-inline: 34px;
   border-color: lightskyblue;
   border-radius: 40px;
   margin-left: 8px;
@@ -69,12 +75,21 @@ body {
 }
 
 .interest-btn1 {
-  color: rgb(42, 119, 168);
-  padding: 8px;
+  /* color: rgb(42, 119, 168); */
+  color: #ffffff;
+  /* padding: 8px; */
+  /* padding: 10px 20px; */
+  padding-inline: 40px;
   background-color: lightskyblue;
-  padding-inline: 16px;
   border-color: lightskyblue;
   border-radius: 40px;
+  margin-left: 8px;
+  margin-bottom: 32px;
+}
+
+.interest-btns {
+  display: flex;
+  justify-content: center;
 }
 
 .interest-btn:hover {
@@ -91,4 +106,5 @@ body {
   padding-left: 4px;
   object-fit: cover;
   margin-right: 5px;
+  width: 170px;
 }
