@@ -35,6 +35,6 @@
 // arrayOfInts = [1, 3, 2, 4, 5, 3, 2, 91];
 // console.log(getMaxNumberInArray(arrayOfInts));
 
-// let i = 10
-// console.log(--i)
-// console.log(i)
+let i = 10
+console.log(--i)
+console.log(i)
