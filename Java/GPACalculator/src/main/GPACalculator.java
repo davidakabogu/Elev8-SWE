@@ -1,3 +1,9 @@
+package main;
+
+import logic.ConvertScore;
+import utils.PrintToConsole;
+import utils.RetrieveUserInfo;
+
 public class GPACalculator {
     public static void main(String[] args) {
         int numberOfCourses = RetrieveUserInfo.getNumberOfCourses();

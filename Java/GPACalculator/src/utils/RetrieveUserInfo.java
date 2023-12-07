@@ -1,13 +1,12 @@
+package utils;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
-
 public class RetrieveUserInfo {
     private static final Scanner scanner = new Scanner(System.in);
-
     public static int getNumberOfCourses() {
         int numberOfCourses = 0;
         boolean validInput = false;
-
         while (!validInput) {
             try {
                 System.out.print("Enter the number of courses: ");
@@ -18,11 +17,14 @@ public class RetrieveUserInfo {
                 scanner.next(); // Consume the invalid input to avoid an infinite loop
             }
         }
-
         return numberOfCourses;
     }
-
     public static String getCourseName() {
+        System.out.print("Enter the course name and code: ");
+        scanner.nextLine();
+        return scanner.nextLine().trim();
+
+//        beginning of validation logic
 //        String courseName = "";
 //        boolean validInput = false;
 //
@@ -38,15 +40,10 @@ public class RetrieveUserInfo {
 //        }
 //
 //        return courseName;
-        System.out.print("Enter the course name and code: ");
-        scanner.nextLine();
-        return scanner.nextLine().trim();
     }
-
     public static int getCourseUnits() {
         int courseUnits = 0;
         boolean validInput = false;
-
         while (!validInput) {
             try {
                 System.out.print("Enter the number of units for the course: ");
@@ -57,14 +54,11 @@ public class RetrieveUserInfo {
                 scanner.next(); // Consume the invalid input to avoid an infinite loop
             }
         }
-
         return courseUnits;
     }
-
     public static double getCourseScore() {
         double courseScore = 0.0;
         boolean validInput = false;
-
         while (!validInput) {
             try {
                 System.out.print("Enter the score for the course: ");
@@ -75,7 +69,6 @@ public class RetrieveUserInfo {
                 scanner.next(); // Consume the invalid input to avoid an infinite loop
             }
         }
-
         return courseScore;
     }
 }

@@ -1,5 +1,4 @@
-import java.util.Scanner;
-
+package logic;
 public class ConvertScore {
     public static String convertToLetterGrade(double score) {
         if (score >= 70 && score <= 100) {

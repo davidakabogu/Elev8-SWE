@@ -1,5 +1,10 @@
+package utils;
+
+import logic.ConvertScore;
+import logic.WeightedGPACalculator;
+
 public class PrintToConsole {
-//    public static double score = RetrieveUserInfo.getCourseScore();
+//    public static double score = utils.RetrieveUserInfo.getCourseScore();
     public static void printCourseDetailsTable(String[] courseNames, int[] courseUnits,double[] courseScores, double[] courseGrades) {
         System.out.println("This is your Result:");
         printTableHeader();
