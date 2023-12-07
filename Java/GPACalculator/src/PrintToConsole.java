@@ -5,7 +5,6 @@ public class PrintToConsole {
         printTableHeader();
 
         for (int i = 0; i < courseNames.length; i++) {
-            // fix improper letter grading
             System.out.format("| %-27s| %-21d | %-10s | %-19.2f |\n",
                     courseNames[i], courseUnits[i], ConvertScore.convertToLetterGrade(courseScores[i]), courseGrades[i]);
         }
