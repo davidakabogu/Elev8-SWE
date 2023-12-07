@@ -23,23 +23,6 @@ public class RetrieveUserInfo {
         System.out.print("Enter the course name and code: ");
         scanner.nextLine();
         return scanner.nextLine().trim();
-
-//        beginning of validation logic
-//        String courseName = "";
-//        boolean validInput = false;
-//
-//        while (!validInput) {
-//            try {
-//                System.out.print("Enter the name of the course eg. MAT101: ");
-//                courseName = scanner.next();
-//                validInput = true; // Input is valid; exit loop
-//            } catch (InputMismatchException e) {
-//                System.out.println("Invalid input. Please enter a valid course name.");
-//                scanner.next(); // Consume the invalid input to avoid an infinite loop
-//            }
-//        }
-//
-//        return courseName;
     }
     public static int getCourseUnits() {
         int courseUnits = 0;
