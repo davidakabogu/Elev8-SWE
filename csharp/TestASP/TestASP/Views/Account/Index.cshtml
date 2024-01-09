@@ -1,0 +1,59 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@model UserToAddViewModel
+
+@{
+    ViewData["Title"] = "Account Page";
+}
+
+<h2>Create New Account</h2>
+<form method="post" asp-action="Index" asp-controller="Account">
+    <p>
+        <label>First Name</label>
+        <input asp-for="FirstName" placeholder="Enter First Name" />
+    </p>
+
+    <p>
+        <label>Last Name</label>
+        <input asp-for="LastName" placeholder="Enter Last Name" />
+    </p>
+
+    <p>
+        <label>Email</label>
+        <input type="email" asp-for="Email" placeholder="Enter Email" />
+    </p>
+
+    <p>
+        <label>Password</label>
+        <input asp-for="Password" type="password" placeholder="Enter Password" />
+    </p>
+
+    <button type="submit" class="btn btn-primary">Send</button>
+
+</form>
+
+<h2>All Users</h2>
+
+<table class=" table">
+    <thead class="thead-light">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @if (Model.Users.Count > 0) {
+                @foreach( var user in Model.Users) {
+                       <tr>
+                           <td> @user.Id </td>
+                           <td> @user.FirstName @user.LastName </td>
+                           <td> @user.Email </td>
+                       </tr>
+}
+}
+    </tbody>
+</table>
