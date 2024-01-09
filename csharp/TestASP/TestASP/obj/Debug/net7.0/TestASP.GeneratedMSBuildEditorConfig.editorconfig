@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/davidking/Software_Engineering/Elev8-SWE/csharp/TestASP/TestASP
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/davidking/Software_Engineering/Elev8-SWE/csharp/TestASP/TestASP/Views/Home/Account.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9BY2NvdW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/davidking/Software_Engineering/Elev8-SWE/csharp/TestASP/TestASP/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
