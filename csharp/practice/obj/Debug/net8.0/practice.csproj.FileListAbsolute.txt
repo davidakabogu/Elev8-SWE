@@ -1,0 +1,15 @@
+/Users/davidking/Software_Engineering/Elev8-SWE/csharp/practice/bin/Debug/net8.0/practice
+/Users/davidking/Software_Engineering/Elev8-SWE/csharp/practice/bin/Debug/net8.0/practice.deps.json
+/Users/davidking/Software_Engineering/Elev8-SWE/csharp/practice/bin/Debug/net8.0/practice.runtimeconfig.json
+/Users/davidking/Software_Engineering/Elev8-SWE/csharp/practice/bin/Debug/net8.0/practice.dll
+/Users/davidking/Software_Engineering/Elev8-SWE/csharp/practice/bin/Debug/net8.0/practice.pdb
+/Users/davidking/Software_Engineering/Elev8-SWE/csharp/practice/obj/Debug/net8.0/practice.GeneratedMSBuildEditorConfig.editorconfig
+/Users/davidking/Software_Engineering/Elev8-SWE/csharp/practice/obj/Debug/net8.0/practice.AssemblyInfoInputs.cache
+/Users/davidking/Software_Engineering/Elev8-SWE/csharp/practice/obj/Debug/net8.0/practice.AssemblyInfo.cs
+/Users/davidking/Software_Engineering/Elev8-SWE/csharp/practice/obj/Debug/net8.0/practice.csproj.CoreCompileInputs.cache
+/Users/davidking/Software_Engineering/Elev8-SWE/csharp/practice/obj/Debug/net8.0/practice.sourcelink.json
+/Users/davidking/Software_Engineering/Elev8-SWE/csharp/practice/obj/Debug/net8.0/practice.dll
+/Users/davidking/Software_Engineering/Elev8-SWE/csharp/practice/obj/Debug/net8.0/refint/practice.dll
+/Users/davidking/Software_Engineering/Elev8-SWE/csharp/practice/obj/Debug/net8.0/practice.pdb
+/Users/davidking/Software_Engineering/Elev8-SWE/csharp/practice/obj/Debug/net8.0/practice.genruntimeconfig.cache
+/Users/davidking/Software_Engineering/Elev8-SWE/csharp/practice/obj/Debug/net8.0/ref/practice.dll
