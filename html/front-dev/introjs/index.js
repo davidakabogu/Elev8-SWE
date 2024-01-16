@@ -57,7 +57,20 @@
 // let newLabel = unLabelElt.textContent.toUpperCase()
 // unLabelElt.innerText = newLabel;
 
-let labelArray = document.getElementsByTagName("label");
-for (let i = 0; i < labelArray.length; i++) {
-    labelArray[i].innerText = labelArray[i].innerText.toUpperCase()
+// let labelArray = document.getElementsByTagName("label");
+// for (let i = 0; i < labelArray.length; i++) {
+//     labelArray[i].innerText = labelArray[i].innerText.toUpperCase()
+// }
+
+// let unElt = document.getElementById("un");
+// unElt.value = "Enter your username here";
+
+document.getElementById("frm").addEventListener("submit", sentData);
+function sentData(frmElt){
+    let unElt = document.getElementById("un");
+    let pwdElt = document.getElementById("pwd");
+
+    if (unElt.value === "" || pwdElt.value === ""){
+        frmElt.preventDefault();
+    }
 }
