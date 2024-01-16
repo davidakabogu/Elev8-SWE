@@ -2,8 +2,16 @@
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-//        System.out.println("Hello World!");
-        Cylinder babycylinder = new Cylinder(12.3, 12.7);
-        babycylinder.area();
+//        Cylinder babycylinder = new Cylinder(2, 4);
+//        Cone babycone = new Cone(2,4);
+//        System.out.println(babycylinder.area());
+//        System.out.println(babycone.area());
+
+//        This is what polymorphism is...
+        Shape babyshape = new Cylinder(2, 4);
+        System.out.println(babyshape.area());
+        babyshape = new Cone(2, 4);
+        System.out.println(babyshape.area());
+
     }
 }
