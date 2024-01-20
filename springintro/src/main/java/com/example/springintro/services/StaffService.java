@@ -12,4 +12,6 @@ public interface StaffService {
     public Staff getStaff(long id);
 
     public void updateStaff(Staff staff);
+
+    public void deleteStaffById(long id);
 }

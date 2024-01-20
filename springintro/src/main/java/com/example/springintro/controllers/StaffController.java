@@ -16,7 +16,7 @@ public class StaffController {
     private StaffService staffService;
 
     @RequestMapping(value = "", method = RequestMethod.GET)
-    public ModelAndView Home() {
+    public ModelAndView home() {
         String info = "Welcome to SpringBoot";
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("staff/index");
@@ -25,14 +25,14 @@ public class StaffController {
     }
 
     @RequestMapping(value = "/Create", method = RequestMethod.GET)
-    public ModelAndView Create() {
+    public ModelAndView create() {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("staff/create");
         return modelAndView;
     }
 
     @RequestMapping(value = "/List", method = RequestMethod.GET)
-    public ModelAndView List() {
+    public ModelAndView list() {
         ModelAndView modelAndView = new ModelAndView();
         List<Staff> staffList = staffService.getAllStaff();
         modelAndView.setViewName("staff/list");
@@ -41,14 +41,14 @@ public class StaffController {
     }
 
     @RequestMapping(value = "/Register", method = RequestMethod.POST)
-    public ModelAndView Register(@RequestParam(value = "userName") String name,
+    public ModelAndView register(@RequestParam(value = "userName") String name,
                                  @RequestParam(value = "userAge") int age) {
         staffService.createStaff(name, age);
         return null;
     }
 
     @RequestMapping(value = "/View", method = RequestMethod.GET)
-    public ModelAndView View(@RequestParam(value = "id") long id) {
+    public ModelAndView view(@RequestParam(value = "id") long id) {
         Staff staff = staffService.getStaff(id);
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("staff/view");
@@ -57,7 +57,7 @@ public class StaffController {
     }
 
     @RequestMapping(value = "/Edit/{id}", method = RequestMethod.GET)
-    public ModelAndView Edit(@PathVariable(value = "id") long id) {
+    public ModelAndView edit(@PathVariable(value = "id") long id) {
         Staff staff = staffService.getStaff(id);
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("staff/edit");
@@ -66,9 +66,22 @@ public class StaffController {
     }
 
     @RequestMapping(value = "/Update/{id}", method = RequestMethod.POST)
-    public ModelAndView Update(Staff staff, @PathVariable(value = "id") long id) {
+    public ModelAndView update(Staff staff, @PathVariable(value = "id") long id) {
         staff.setId(id);
         staffService.updateStaff(staff);
         return null;
+    }
+
+    @RequestMapping(value = "/Delete/{id}", method = RequestMethod.GET)
+    public ModelAndView delete(@PathVariable("id") long id) {
+        Staff staffToDelete = staffService.getStaff(id);
+        ModelAndView modelAndView = new ModelAndView();
+        if (staffToDelete != null) {
+            staffService.deleteStaffById(id);
+            List<Staff> staffList = staffService.getAllStaff();
+            modelAndView.addObject("staff", staffList);
+            return modelAndView;
+        }
+        return modelAndView;
     }
 }

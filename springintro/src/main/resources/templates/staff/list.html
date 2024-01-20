@@ -27,7 +27,7 @@
             <td>
                 <a th:href="@{/Staff/View(id=${staff.id})}">View</a> |
                 <a th:href="@{/Staff/Edit/{id}(id=${staff.id})}">Edit</a> |
-                <a href="">Delete</a>
+                <a th:href="@{/Staff/Delete/{id}(id=${staff.id})}">Delete</a>
             </td>
         </tr>
     </table>

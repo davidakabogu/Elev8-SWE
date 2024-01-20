@@ -41,4 +41,9 @@ public class StaffServiceImp implements StaffService {
     public void updateStaff(Staff staff) {
         staffRepository.save(staff);
     }
+
+    @Override
+    public void deleteStaffById(long id) {
+        staffRepository.deleteById(id);
+    }
 }
