@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-intro": {
+    "list-manager": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/angular-intro",
+            "outputPath": "dist/list-manager",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -57,10 +57,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "angular-intro:build:production"
+              "buildTarget": "list-manager:build:production"
             },
             "development": {
-              "buildTarget": "angular-intro:build:development"
+              "buildTarget": "list-manager:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -68,7 +68,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "angular-intro:build"
+            "buildTarget": "list-manager:build"
           }
         },
         "test": {
@@ -93,6 +93,6 @@
     }
   },
   "cli": {
-    "analytics": "0ef0f2d4-750e-4a9f-b601-0ea81224e68e"
+    "analytics": "aeea9419-aa0b-4ef3-9e32-87f2790bd0db"
   }
 }
