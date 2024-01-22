@@ -13,8 +13,6 @@
       </ul>
 
       <div>
-        <!-- <input [(ngModel)]="newItem" placeholder="Enter new item" (keydown).enter="addItem()"/> -->
-        <!-- <button (click)="addItem()">Add Item</button> -->
         <input
           (keydown.enter)="addItem($event)"
           placeholder="Enter new item"
