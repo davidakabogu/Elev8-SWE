@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h1>Welcome to the listing App</h1>
+      <input
+        id="userItems"
+        type="text"
+        placeholder="Enter you List items"
+        (keydown.enter)="addItem($event)"
+        [(ngModel)]="newItem"
+      />
+      <button (click)="clearList()">Clear List</button>
+      <ul>
+        <li *ngFor="let item of myList">{{ item }}</li>
+      </ul>
+    </div>
+  </body>
+</html>
