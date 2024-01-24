@@ -11,14 +11,21 @@
         <h1>Welcome to {{ title }}</h1>
         <h3>This is a list of users gotten from an api endpoint</h3>
         <div>
+          <router-outlet></router-outlet>
           <ul>
             @for (user of users; track user.id) {
-            <li>{{ user.name }}</li>
+            <li>
+              <a
+                class="button"
+                routerLink="/user-card"
+                routerLinkActive="activebutton"
+                (click)="showUserDetails(user.id)"
+              >
+                {{ user.name }}
+              </a>
+            </li>
             }@empty { No users found }
           </ul>
-        </div>
-        <div *ngFor="let user of users">
-          <app-user-card></app-user-card>
         </div>
       </div>
     </div>
