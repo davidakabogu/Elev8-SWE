@@ -1,0 +1,13 @@
+<h2>Card Component</h2>
+<div>
+  <ul *ngFor="let user of users | async">
+    <li>
+      <img src="" alt="user image" /> <br />
+      {{ user.name }} <br />
+      {{ user.email.toLocaleLowerCase() }} <br />
+      <button routerLink="/users/:id" (click)="getUserInfo(user.id)">
+        View Details
+      </button>
+    </li>
+  </ul>
+</div>

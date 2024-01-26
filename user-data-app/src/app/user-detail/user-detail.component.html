@@ -1,0 +1,8 @@
+<div>
+  <h2>{{ userInfo.name }}'s Info Dump</h2>
+  <i>Username:</i> {{ userInfo.username }} <br />
+  <i>User Email:</i> {{ userInfo.email.toLocaleLowerCase() }} <br />
+  <i>User's Address:</i> {{ userInfo.address.suite }}
+  {{ userInfo.address.street }}, {{ userInfo.address.city }} <br />
+  <i>zipcode:</i> {{ userInfo.address.zipcode }}
+</div>
