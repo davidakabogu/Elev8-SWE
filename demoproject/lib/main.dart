@@ -39,7 +39,8 @@ class MainApp extends StatelessWidget {
             items: const [
               BottomNavigationBarItem(label: 'Home', icon: Icon(Icons.home)),
               BottomNavigationBarItem(label: 'Phone', icon: Icon(Icons.phone)),
-              BottomNavigationBarItem(label: 'Settings', icon: Icon(Icons.settings)),
+              BottomNavigationBarItem(
+                  label: 'Settings', icon: Icon(Icons.settings)),
             ],
           ),
         ));
