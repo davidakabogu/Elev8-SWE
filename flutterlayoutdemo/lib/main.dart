@@ -33,11 +33,8 @@ class MyHomePage extends StatelessWidget {
         body: const SingleChildScrollView(
           child: Column(
             children: [
-              ImageSection(
-                  image: 'images/9215c3fae621312e8640fc6e12dd32c3.jpeg'),
-              TitleSection(
-                  name: 'Oeschinen Lake Campground',
-                  location: 'Kandersteg, Switzerland'),
+              ImageSection(image: 'images/Naruto.jpeg'),
+              TitleSection(name: 'Uzumaki Naruto', location: 'Konohagakure'),
               ButtonSection(),
               TextSection()
             ],

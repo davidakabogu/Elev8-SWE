@@ -58,7 +58,7 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   assets:
-  - images/9215c3fae621312e8640fc6e12dd32c3.jpeg
+  - images/Naruto.jpeg
 
   # To add assets to your application, add an assets section, like this:
   # assets:
