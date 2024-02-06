@@ -1,0 +1,98 @@
+﻿@using DemoAppMvc.Models
+@model List<Staff>;
+
+@{
+    string pageTitle = ViewBag.Header;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@pageTitle</title>
+    <style>
+        table, th, td {
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+
+        table {
+            width: 70%;
+        }
+
+        th {
+            background-color: brown;
+            color: white;
+            height: 40px;
+        }
+
+        th, td {
+            text-align: center;
+        }
+
+        tr:hover {
+            background-color: coral;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #button-id {
+            display: inline-block;
+            position: fixed;
+            top: 16%;
+            right: 40%;
+        }
+
+        .button {
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            margin: 10px;
+        }
+
+            .button:hover {
+                color: brown;
+            }
+    </style>
+</head>
+
+<body>
+    <h1>@pageTitle</h1>
+    <nav id="button-id">
+        <a class="button" asp-controller="Staff" asp-action="Create">Back</a>
+    </nav>
+    <br>
+
+    <table class="table1">
+        <tr>
+            <th class="tablehead">ID</th>
+            <th class="tablehead">FIRST NAME</th>
+            <th class="tablehead">LAST NAME</th>
+            <th class="tablehead">AGE</th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+
+        @foreach (Staff st in Model)
+        {
+            <tr>
+                <td class="rows">@st.Id</td>
+                <td class="rows">@st.FirstName</td>
+                <td class="rows">@st.LastName</td>
+                <td class="rows">@st.Age</td>
+                <td class="rows">
+                    <a class="button" asp-controller="Staff" asp-action="View" asp-route-itemid="@st.Id">View</a>
+                </td>
+                <td>
+                    <a class="button" asp-controller="Staff" asp-action="Edit" asp-route-itemid="@st.Id">Edit</a>
+                </td>
+                <td>
+                    <a class="button" asp-controller="Staff" asp-action="Delete" asp-route-itemid="@st.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </table>
+</body>
+</html>
